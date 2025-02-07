@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = require("../src/server");
 describe("Testando Rotas de Usuário", () => {
   afterAll(async () => {
-    await mongoose.connection.close(); // 🔥 Fechar a conexão do MongoDB após os testes
+    await mongoose.connection.close(); 
   });
 
   test("Registro de usuário", async () => {
